@@ -1,0 +1,15 @@
+function swapValues(x, y) {
+    [x, y] = [y, x];
+    return [x, y];
+}
+
+// Example usage:
+let a = 5;
+let b = 10;
+
+console.log(`Before swapping: a = ${a}, b = ${b}`);
+
+// Call the function to swap values
+[a, b] = swapValues(a, b);
+
+console.log(`After swapping: a = ${a}, b = ${b}`);
