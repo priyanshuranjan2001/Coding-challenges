@@ -1,0 +1,24 @@
+function wordCountGenerator(inputString) {
+    const words = inputString.split();
+
+    const wordCountMap = new Map();
+    words.forEach(word => {
+    
+        const lowercaseWord = word.toLowerCase();
+
+        if (wordCountMap.has(lowercaseWord)) {
+            wordCountMap.set(lowercaseWord, wordCountMap.get(lowercaseWord) + 1);
+        } else {
+            wordCountMap.set(lowercaseWord, 1);
+        }
+    });
+
+    return wordCountMap;
+}
+
+// Example usage:
+const inputText = "This is a sample text. This text contains some sample words.";
+const result = wordCountGenerator(inputText);
+
+// Output the result
+console.log(result);
