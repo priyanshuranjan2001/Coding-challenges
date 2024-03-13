@@ -1,0 +1,13 @@
+function findMaxAndMin(inputArray) {
+    const max = Math.max(...inputArray);
+    const min = Math.min(...inputArray);
+
+    return { max, min };
+}
+
+// Example usage:
+const inputArray = [5, 2, 7, 1, 9];
+const resultObject = findMaxAndMin(inputArray);
+
+// Output the result
+console.log(resultObject);
