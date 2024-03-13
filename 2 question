@@ -1,0 +1,12 @@
+function removeDuplicates(inputArray) {
+    const uniqueSet = new Set(inputArray);
+
+    const uniqueArray = Array.from(uniqueSet);
+
+    return uniqueArray;
+}
+
+// Example usage:
+const inputNumbers = [1, 2, 3, 2, 4, 5, 1, 6, 7, 7, 8];
+const uniqueNumbers = removeDuplicates(inputNumbers);
+console.log(uniqueNumbers);
