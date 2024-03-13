@@ -1,0 +1,14 @@
+function extractElements(inputArray) {
+    const [first, second, ...rest] = inputArray;
+    const last = rest.pop();
+
+    // Return an array with the extracted values
+    return [first, second, last];
+}
+
+// Example usage:
+const inputArray = [1, 2, 3, 4, 5];
+const resultArray = extractElements(inputArray);
+
+// Output the result
+console.log(resultArray);
